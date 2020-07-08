@@ -6,22 +6,17 @@
 #define lli long long int
 #define li long int
 #define ld long double
-#define ll long long 
+#define ll long long
 using namespace std;
 
 int main()
 {
-    lli n;
-    cin >> n;
-    
-    for(int k=1;k<=n;k++)
-    {
-    	ll a1= k*k, a2= a1*(a1-1)/2;
-  	if(k>2)
-  	a2-=4*(k-1)*(k-2);
-  	cout<<a2<<endl;
-	}
-  
-  	
+   ll n,s=1;
+   cin>>n;
+   for(int i=0;i<n;i++)
+   {
+   	s=2*s%((int)1e9+7); //1e9+7 is for mod
+   }
+   cout<<s;
     return 0;
 }

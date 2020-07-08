@@ -6,22 +6,21 @@
 #define lli long long int
 #define li long int
 #define ld long double
-#define ll long long 
+#define ll long long
 using namespace std;
 
 int main()
 {
-    lli n;
-    cin >> n;
-    
-    for(int k=1;k<=n;k++)
-    {
-    	ll a1= k*k, a2= a1*(a1-1)/2;
-  	if(k>2)
-  	a2-=4*(k-1)*(k-2);
-  	cout<<a2<<endl;
-	}
-  
-  	
+   ll n,s=1,five=5,zero=0;
+   cin>>n;
+   while(n/five>0)
+   
+   {
+   	
+   	zero+=n/five;
+   	five=five*5;
+   	
+   }
+   cout<<zero;
     return 0;
 }

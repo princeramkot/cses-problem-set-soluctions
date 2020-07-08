@@ -6,22 +6,19 @@
 #define lli long long int
 #define li long int
 #define ld long double
-#define ll long long 
+#define ll long long
 using namespace std;
 
 int main()
 {
-    lli n;
-    cin >> n;
-    
-    for(int k=1;k<=n;k++)
-    {
-    	ll a1= k*k, a2= a1*(a1-1)/2;
-  	if(k>2)
-  	a2-=4*(k-1)*(k-2);
-  	cout<<a2<<endl;
-	}
-  
-  	
+   int t;
+   cin>>t;
+   while(t--)
+   {
+   	ll a,b;
+   	cin>>a>>b;				
+
+           cout << ((a + b) % 3 == 0 && (min(a, b) * 2 >= max(a, b)) ? "YES" : "NO") << endl;
+   }
     return 0;
 }
